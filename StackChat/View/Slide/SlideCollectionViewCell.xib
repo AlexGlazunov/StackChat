@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lBK-lO-02C" customClass="SlideCollectionViewCell" customModule="StackChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="477"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bWr-mw-mEW">
+                <rect key="frame" x="0.0" y="0.0" width="251" height="477"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="yb5-pZ-fCg">
+                        <rect key="frame" x="0.0" y="0.0" width="251" height="477"/>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOI-de-Ud0">
+                        <rect key="frame" x="84" y="299" width="83" height="30"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <state key="normal" title="Registration">
+                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
+                            <color key="titleShadowColor" systemColor="tertiarySystemBackgroundColor"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                        </state>
+                        <connections>
+                            <action selector="regBtnClick:" destination="lBK-lO-02C" eventType="touchUpInside" id="jGB-XT-qyD"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAh-o9-0b5">
+                        <rect key="frame" x="102.5" y="389" width="46" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemBlueColor"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="authBtnClick:" destination="lBK-lO-02C" eventType="touchUpInside" id="xiU-uq-Epg"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="StackChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WU9-C6-CGt">
+                        <rect key="frame" x="39" y="53" width="87" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text Field" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="99G-6s-biZ">
+                        <rect key="frame" x="39" y="163" width="121" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text Field" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPl-1B-PcS">
+                        <rect key="frame" x="39" y="163" width="121" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WU9-C6-CGt" firstAttribute="top" secondItem="bWr-mw-mEW" secondAttribute="top" constant="53" id="99V-lr-hcE"/>
+                    <constraint firstAttribute="bottom" secondItem="uAh-o9-0b5" secondAttribute="bottom" constant="58" id="E8w-Az-jYr"/>
+                    <constraint firstItem="WU9-C6-CGt" firstAttribute="leading" secondItem="bWr-mw-mEW" secondAttribute="leading" constant="39" id="FzE-aS-uKP"/>
+                    <constraint firstItem="yb5-pZ-fCg" firstAttribute="leading" secondItem="bWr-mw-mEW" secondAttribute="leading" id="JcI-yn-i26"/>
+                    <constraint firstItem="uAh-o9-0b5" firstAttribute="centerX" secondItem="bWr-mw-mEW" secondAttribute="centerX" id="Qua-gc-CFW"/>
+                    <constraint firstAttribute="trailing" secondItem="yb5-pZ-fCg" secondAttribute="trailing" id="XoN-ya-BNq"/>
+                    <constraint firstItem="iOI-de-Ud0" firstAttribute="centerX" secondItem="bWr-mw-mEW" secondAttribute="centerX" id="ZUn-m6-Rs2"/>
+                    <constraint firstAttribute="bottom" secondItem="yb5-pZ-fCg" secondAttribute="bottom" id="bpX-oC-FX5"/>
+                    <constraint firstItem="yb5-pZ-fCg" firstAttribute="top" secondItem="bWr-mw-mEW" secondAttribute="top" id="d8E-M8-vuH"/>
+                    <constraint firstItem="uAh-o9-0b5" firstAttribute="top" secondItem="iOI-de-Ud0" secondAttribute="bottom" constant="60" id="exd-zy-Dao"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="251" height="477"/>
+            <connections>
+                <outlet property="authBtn" destination="uAh-o9-0b5" id="tbO-bm-cSe"/>
+                <outlet property="descriptionText" destination="uPl-1B-PcS" id="cqY-v3-vGb"/>
+                <outlet property="regBtn" destination="iOI-de-Ud0" id="iGT-9c-0NN"/>
+                <outlet property="slideImg" destination="yb5-pZ-fCg" id="PvV-pQ-gLl"/>
+            </connections>
+            <point key="canvasLocation" x="-1323.913043478261" y="117.52232142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="slide1" width="188" height="334.33334350585938"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
