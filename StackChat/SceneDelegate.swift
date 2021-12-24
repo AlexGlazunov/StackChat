@@ -37,7 +37,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func startLogin(){
-        let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginViewContlroller")
+        let loginVC = UIStoryboard(name: "Main", bundle:    nil).instantiateViewController(identifier: "LoginViewController")
+        //delegate//
         self.window?.rootViewController = loginVC
         self.window?.makeKeyAndVisible()
     }

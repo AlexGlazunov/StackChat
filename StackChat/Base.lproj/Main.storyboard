@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="StackChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="StackChat" customModuleProvider="target" sceneMemberID="viewController"> //delegate//
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,6 +238,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="xmark.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="closeVC:" destination="gyW-oc-EbF" eventType="touchUpInside" id="G4Z-93-HCJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -390,6 +393,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="xmark.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="closeVC:" destination="9mb-mB-5z1" eventType="touchUpInside" id="CIa-Iy-oVW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

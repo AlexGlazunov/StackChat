@@ -14,7 +14,7 @@
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lBK-lO-02C" customClass="SlideCollectionViewCell" customModule="StackChat" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="251" height="477"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bWr-mw-mEW">
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="LoginViewController" insetsLayoutMarginsFromSafeArea="NO" id="bWr-mw-mEW">  
                 <rect key="frame" x="0.0" y="0.0" width="251" height="477"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -35,10 +35,10 @@
                         </connections>
                     </button>
                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAh-o9-0b5">
-                        <rect key="frame" x="102.5" y="389" width="46" height="30"/>
+                        <rect key="frame" x="103" y="389" width="45" height="30"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="systemBlueColor"/>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" title="sign in"/>
                         <connections>
                             <action selector="authBtnClick:" destination="lBK-lO-02C" eventType="touchUpInside" id="xiU-uq-Epg"/>
                         </connections>
