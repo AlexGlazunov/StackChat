@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="StackChat" customModuleProvider="target" sceneMemberID="viewController"> //delegate//
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="StackChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +215,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="4u0-a4-l8w"/>
                                                 </constraints>
-                                                <state key="normal" title="sign in">
+                                                <state key="normal" title="sign up">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -224,11 +224,14 @@
                                                         <integer key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="regBtnClick:" destination="gyW-oc-EbF" eventType="touchUpInside" id="VPy-5O-wnL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nao-ET-9yL">
                                                 <rect key="frame" x="0.0" y="422" width="354" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <state key="normal" title="sign up"/>
+                                                <state key="normal" title="sign in"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -267,6 +270,12 @@
                             <constraint firstItem="7Xu-3U-UBo" firstAttribute="top" secondItem="MwF-Ye-3mS" secondAttribute="top" id="pXs-M0-q61"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="1dm-sD-bOE" id="NWc-So-EKD"/>
+                        <outlet property="mainView" destination="MwF-Ye-3mS" id="f9v-UH-P4a"/>
+                        <outlet property="passwordField" destination="qQ1-df-Cqq" id="bT2-F9-djR"/>
+                        <outlet property="rePasswordField" destination="IzX-kP-cQS" id="gKG-yx-eaU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6Z-xs-ySq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

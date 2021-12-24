@@ -12,6 +12,7 @@
 		C35AB6B62774A57600A8F116 /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35AB6B52774A57600A8F116 /* RegViewController.swift */; };
 		C35AB6B82774A59400A8F116 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35AB6B72774A59400A8F116 /* AuthViewController.swift */; };
 		C35AB6BA2774A7C200A8F116 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35AB6B92774A7C200A8F116 /* AppViewController.swift */; };
+		C37D30D92776295E004F9C06 /* CheckField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D30D82776295E004F9C06 /* CheckField.swift */; };
 		C3DA282C26DADE2D00A4298A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA282B26DADE2D00A4298A /* AppDelegate.swift */; };
 		C3DA282E26DADE2D00A4298A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA282D26DADE2D00A4298A /* SceneDelegate.swift */; };
 		C3DA283326DADE2D00A4298A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DA283126DADE2D00A4298A /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		C35AB6B52774A57600A8F116 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
 		C35AB6B72774A59400A8F116 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		C35AB6B92774A7C200A8F116 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		C37D30D82776295E004F9C06 /* CheckField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckField.swift; sourceTree = "<group>"; };
 		C3DA282826DADE2D00A4298A /* StackChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DA282B26DADE2D00A4298A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3DA282D26DADE2D00A4298A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				C35AB6B1277468E200A8F116 /* Model.swift */,
 				C35AB6B32774A1C800A8F116 /* SliderSlides.swift */,
+				C37D30D82776295E004F9C06 /* CheckField.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				C35AB6B2277468E200A8F116 /* Model.swift in Sources */,
 				C3DA285226DB3BBF00A4298A /* SlideCollectionViewCell.swift in Sources */,
 				C35AB6B42774A1C800A8F116 /* SliderSlides.swift in Sources */,
+				C37D30D92776295E004F9C06 /* CheckField.swift in Sources */,
 				C3DA284626DB36AD00A4298A /* LoginViewController.swift in Sources */,
 				C35AB6B82774A59400A8F116 /* AuthViewController.swift in Sources */,
 				C3DA282C26DADE2D00A4298A /* AppDelegate.swift in Sources */,
