@@ -129,7 +129,7 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dm-sD-bOE">
+                                                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="email" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dm-sD-bOE">
                                                                 <rect key="frame" x="20" y="10" width="314" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -152,11 +152,11 @@
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A60-3r-eKs">
                                                         <rect key="frame" x="0.0" y="71" width="354" height="54"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qQ1-df-Cqq">
+                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="password" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qQ1-df-Cqq">
                                                                 <rect key="frame" x="23" y="8" width="291" height="34"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cDK-lc-YpR">
                                                                 <rect key="frame" x="20" y="10" width="314" height="34"/>
@@ -181,16 +181,10 @@
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehp-wk-eOr">
                                                         <rect key="frame" x="0.0" y="142" width="354" height="54"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IzX-kP-cQS">
-                                                                <rect key="frame" x="23" y="8" width="291" height="34"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password repeat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96h-hp-anz">
+                                                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="repassword" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password repeat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96h-hp-anz">
                                                                 <rect key="frame" x="20" y="10" width="314" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -272,9 +266,12 @@
                     </view>
                     <connections>
                         <outlet property="emailField" destination="1dm-sD-bOE" id="NWc-So-EKD"/>
+                        <outlet property="emailView" destination="6aK-uz-WDb" id="GNI-Xs-bhT"/>
                         <outlet property="mainView" destination="MwF-Ye-3mS" id="f9v-UH-P4a"/>
                         <outlet property="passwordField" destination="qQ1-df-Cqq" id="bT2-F9-djR"/>
-                        <outlet property="rePasswordField" destination="IzX-kP-cQS" id="gKG-yx-eaU"/>
+                        <outlet property="passwordView" destination="A60-3r-eKs" id="EFR-ij-5mI"/>
+                        <outlet property="rePasswordField" destination="96h-hp-anz" id="J0l-W7-Vic"/>
+                        <outlet property="rePasswordView" destination="Ehp-wk-eOr" id="Xkt-bc-dCX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6Z-xs-ySq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

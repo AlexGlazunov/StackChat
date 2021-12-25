@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CheckField{
+class CheckField {
     
     static let shared = CheckField()
     init() { }
