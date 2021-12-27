@@ -11,6 +11,7 @@ class RegViewController: UIViewController {
     
     var delegate: LoginViewControllerDelegate!
     var checkField = CheckField.shared
+    var service = Service.shared
     
     @IBOutlet var mainView: UIView!
     var tapGest: UIGestureRecognizer?
@@ -48,7 +49,17 @@ class RegViewController: UIViewController {
         checkField.validField(passwordView, passwordField)
         {
             if passwordField.text == rePasswordField.text{
-            print("correct")
+                service.createNewUser(LoginField(email: emailField.text!, password: passwordField.text!)) { [weak self] code in
+                    switch code.code{
+                    case 0:
+                        print("registration error")
+                    case 1:
+                        print("Registration succes")
+                        self?.service.confirmEmail()
+                    default:
+                        print("Unknown erroe")
+                    }
+                }
             } else {
                 print("wrong password")
             }

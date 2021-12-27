@@ -21,12 +21,20 @@ class Service{
         Auth.auth().createUser(withEmail: data.email, password: data.password) { [weak self] result, err in
             if err == nil {
                 if result != nil {
-                    let userId = result?.user.uid
-                    completion(ResponceCode(code: 1))
+                    //let userId = result?.user.uid
+                    
                 }
             } else {
                 completion(ResponceCode(code: 0))
             }
         }
+    }
+    func confirmEmail(){
+        Auth.auth().currentUser?.sendEmailVerification(completion: { err in
+            if err != nil {
+                print(err!.localizedDescription)
+            }
+        })
+        
     }
 }
